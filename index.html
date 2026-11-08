@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Aulia Rahman Santosa | Mechanical Engineer</title>
+<meta name="description" content="Engineering portfolio: friction welding research, maintenance, manufacturing and CAD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e8ebed;--paper:#f4f6f7;--ink:#1c2630;--steel:#5b6b78;--line:#b9c2c9;--temper:#2f5da8;--straw:#c9a227;--al:#c3ccd2}
+@media (prefers-color-scheme:dark){:root{--bg:#161d24;--paper:#1d262e;--ink:#e6ebef;--steel:#9aa9b5;--line:#33414d;--temper:#7aa2e3;--straw:#e0bd4a;--al:#6c7b86}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;background:var(--bg);opacity:.9;z-index:-1}
+a{color:var(--temper)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--straw);outline-offset:2px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;line-height:1.05;margin:0;font-weight:600}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--ink)}
+nav .wrap{display:flex;gap:6px 20px;flex-wrap:wrap;align-items:center;padding-top:10px;padding-bottom:10px}
+nav b{font:700 1.25rem "Barlow Condensed",sans-serif;margin-right:auto}
+nav a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:2px 0;border-bottom:2px solid transparent}nav a:hover{border-color:var(--temper)}
+.hero{padding:56px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
+h1{font-size:clamp(2.6rem,7vw,5rem);font-weight:700;letter-spacing:-.01em}
+.role{font-size:1.15rem;color:var(--steel);max-width:34ch;margin:14px 0 22px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600;background:var(--paper)}
+.btn.p{background:var(--ink);color:var(--paper)}.btn:hover{border-color:var(--temper)}
+.joint{background:var(--paper);border:2px solid var(--ink);padding:26px 22px 14px}
+.bars{position:relative;height:120px;display:flex;align-items:center;justify-content:center}
+.bar{height:64px;width:50%;position:absolute;top:28px}
+.al{left:0;background:linear-gradient(var(--al),#dfe5e9 45%,var(--al));border:2px solid var(--ink);border-right:0;animation:inL 1.6s .2s cubic-bezier(.6,0,.2,1) both}
+.st{right:0;background:linear-gradient(#34424e,#4a5a67 45%,#34424e);border:2px solid var(--ink);border-left:0;animation:inR 1.6s .2s cubic-bezier(.6,0,.2,1) both}
+.ring{position:absolute;left:50%;top:18px;width:18px;height:84px;margin-left:-9px;border-radius:50%;background:radial-gradient(var(--straw),var(--temper) 70%,transparent 72%);opacity:.9;animation:glow 2.6s 1.6s ease-out both}
+@keyframes inL{from{transform:translateX(-45%)}}@keyframes inR{from{transform:translateX(45%)}}
+@keyframes glow{0%{transform:scale(.2);opacity:0}30%{transform:scale(2.2);opacity:1}100%{transform:scale(1);opacity:.9}}
+@media (prefers-reduced-motion:reduce){.al,.st,.ring{animation:none}}
+.joint p{margin:8px 0 0;font-size:.85rem;color:var(--steel);display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--line);padding-top:8px}
+.tb{display:grid;grid-template-columns:repeat(4,1fr);border:2px solid var(--ink);background:var(--paper);margin-top:34px}
+.tb div{padding:10px 14px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink)}.tb div:nth-child(4n){border-right:0}
+.tb dt{font-size:.78rem;color:var(--steel)}.tb dd{margin:0;font-weight:600}
+section{padding:46px 0;border-top:2px solid var(--ink)}
+h2{font-size:2.3rem;margin-bottom:22px}
+.two{display:grid;grid-template-columns:240px 1fr;gap:34px}
+.two img{width:100%;border:2px solid var(--ink);display:block}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:var(--paper);border:2px solid var(--ink);padding:20px}
+.card h3{font-size:1.5rem;margin-bottom:4px}.meta{color:var(--steel);font-size:.9rem;margin:0 0 10px}
+ul{padding-left:1.1em;margin:8px 0}li{margin:5px 0}
+.tl{border-left:3px solid var(--temper);padding-left:22px;margin-left:6px}
+.tl article{margin-bottom:30px;position:relative}.tl article:before{content:"";position:absolute;left:-31px;top:8px;width:11px;height:11px;background:var(--straw);border:2px solid var(--ink)}
+.proj{background:var(--paper);border:2px solid var(--ink);margin-bottom:22px}
+.proj>div{padding:20px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.tags span{border:1px solid var(--steel);padding:1px 9px;font-size:.82rem}
+.more{display:none;margin-top:12px}.proj.open .more{display:block}
+button.tog{margin-top:10px;font:600 .95rem "Public Sans",sans-serif;background:none;border:2px solid var(--ink);color:var(--ink);padding:7px 14px;cursor:pointer}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:14px}
+.gal button{padding:0;border:2px solid var(--ink);background:#fff;cursor:zoom-in;height:120px}
+.gal img{width:100%;height:100%;object-fit:contain;display:block}
+dialog{max-width:min(92vw,980px);border:3px solid var(--ink);padding:10px;background:var(--paper);color:var(--ink)}
+dialog img{max-width:100%;max-height:78vh;display:block;margin:auto}dialog::backdrop{background:rgba(0,0,0,.7)}
+dialog p{margin:8px 0 0;font-size:.9rem}dialog form button{float:right;font:600 1rem "Public Sans";cursor:pointer;padding:4px 12px;border:2px solid var(--ink);background:var(--paper);color:var(--ink)}
+.skills dl{margin:0}.skills dt{font-weight:600;margin-top:10px}.skills dd{margin:2px 0 0;color:var(--steel)}
+footer{border-top:2px solid var(--ink);padding:26px 0 40px;color:var(--steel);font-size:.9rem}
+@media (max-width:760px){.hero .wrap,.two{grid-template-columns:1fr}.two img{max-width:200px}.tb{grid-template-columns:1fr 1fr}.tb div:nth-child(4n){border-right:1px solid var(--ink)}.tb div:nth-child(2n){border-right:0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>M. A. R. Santosa</b><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#leadership">Leadership</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<h1>Muhammad Aulia Rahman Santosa</h1>
+<p class="role">Mechanical engineer working on maintenance, welding technology and manufacturing.</p>
+<div class="btns"><a class="btn p" href="mailto:aulsantosa@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/auliasantosa">LinkedIn</a><a class="btn" href="CV_Muhammad_Aulia_Rahman_Santosa.pdf">Download CV</a></div>
+</div>
+<div class="joint" aria-label="Animation of an aluminium bar and a steel bar joining by friction welding">
+<div class="bars"><div class="bar al"></div><div class="bar st"></div><div class="ring"></div></div>
+<p><span>A6061 aluminium</span><span>ST60 steel</span></p>
+</div>
+</div>
+<div class="wrap"><dl class="tb">
+<div><dt>Degree</dt><dd>B.Eng. Mechanical Engineering</dd></div><div><dt>University</dt><dd>Universitas Brawijaya</dd></div><div><dt>Years / GPA</dt><dd>2022 to 2026 / 3.28 of 4.00</dd></div><div><dt>Based in</dt><dd>Bogor, Indonesia</dd></div>
+</dl></div></header>
+
+<section id="about"><div class="wrap two">
+<img src="images/portrait.jpg" alt="Portrait of Aulia">
+<div>
+<h2>About</h2>
+<p>I am a recent mechanical engineering graduate with a background in manufacturing and process optimization. My thesis optimized the tensile strength of friction-welded aluminium to steel joints, and I have hands-on exposure to plant maintenance, machine diagnostics and welding technology.</p>
+<ul>
+<li><b>Welding training:</b> Basic Industrial Welding, 24 hours, SPPVP Lampung (Kemnaker RI): workplace preparation, welding process and equipment, WPS identification, visual weld inspection.</li>
+<li><b>English:</b> TOEFL ITP Prediction 567, EF SET 72/100 (C2 Proficient).</li>
+<li><b>Competition:</b> 3rd place, department student creativity program (2022).</li>
+</ul>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<div class="tl">
+<article>
+<h3>Mechanical Maintenance Intern</h3>
+<p class="meta">PT Riau Andalan Pulp and Paper (APRIL Group), Riau | July to August 2025</p>
+<ul>
+<li>Took part in routine inspection and maintenance in production and utility plants, and in a mill shutdown: replaced a critical component (doctor blade holder), field inspection and technical data collection.</li>
+<li>Joined the Board Machine 1 roll cleaning improvement project: analyzed root causes with Fishbone and Why-Why, and documented the results of the Kadant Unitrak sliding rail adapter, which cut overhaul downtime from 6 to 3 hours and technicians from 10 to 5 per overhaul.</li>
+<li>Drafted a proposed SOP using the PDCA cycle and helped verify PTW and JSA documentation checklists.</li>
+</ul>
+</article>
+<article>
+<h3>Laboratory Assistant and Infrastructure Manager</h3>
+<p class="meta">Manufacturing Process Laboratory I, Universitas Brawijaya | Since June 2024</p>
+<ul>
+<li>Mentored 130+ engineering students over 4 semesters and ran quality audits on practicum reports.</li>
+<li>Diagnosed and repaired malfunctions on 7+ conventional machines (milling, lathe, welding).</li>
+<li>Coordinated 4 practicum modules per semester for 80+ students with strict safety compliance.</li>
+<li>Operated CDFW and FSW welding equipment to support S1 and S2 thesis research on joint integrity and material properties.</li>
+</ul>
+</article>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+
+<div class="proj"><div>
+<h3>Friction welding of aluminium 6061 to ST60 steel</h3>
+<p class="meta">Final project, 2026</p>
+<p>Optimized tensile strength and interface morphology of bimetallic joints made by rotary friction welding, using a 3-factor, 3-level Box-Behnken design: chamfer angle (20, 45, 70 degrees), friction time and friction pressure.</p>
+<div class="tags"><span>Rotary friction welding</span><span>RSM Box-Behnken</span><span>Minitab</span><span>ImageJ</span><span>Inventor</span></div>
+<button class="tog" aria-expanded="false">Show details</button>
+<div class="more">
+<ul><li>Designed the experimental setup and the single-sided chamfer geometry, without filler metal or shielding gas.</li>
+<li>Ran destructive tensile tests and interface metallography to evaluate joint efficiency and the thermo-mechanically affected zone.</li>
+<li>Built RSM regression models in Minitab to guide friction welding parameters.</li></ul>
+<div class="gal">
+<button data-s="images/thesis-tensile-chart.jpg" data-c="Tensile strength comparison"><img src="images/thesis-tensile-chart.jpg" alt="Tensile strength comparison chart"></button>
+<button data-s="images/thesis-surface-plots.jpg" data-c="Surface plots of tensile strength"><img src="images/thesis-surface-plots.jpg" alt="Surface plots of tensile strength"></button>
+<button data-s="images/thesis-contour.jpg" data-c="Contour plots of tensile strength"><img src="images/thesis-contour.jpg" alt="Contour plots of tensile strength"></button>
+<button data-s="images/thesis-interface.jpg" data-c="Joint interface analysis"><img src="images/thesis-interface.jpg" alt="Joint interface analysis"></button>
+<button data-s="images/thesis-specimen.jpg" data-c="Tensile test specimen"><img src="images/thesis-specimen.jpg" alt="Tensile test specimen"></button>
+<button data-s="images/welding-process.jpg" data-c="Friction welding in progress"><img src="images/welding-process.jpg" alt="Friction welding in progress"></button>
+</div></div>
+</div></div>
+
+<div class="proj"><div>
+<h3>GreenSense: smart greenhouse irrigation</h3>
+<p class="meta">Capstone group project, 2025</p>
+<p>An automated irrigation system that waters individual plant coordinates with a 2-axis CNC plotter, driven by IoT soil moisture sensors and a machine learning model. I led the mechanical fabrication, structural assembly and alignment of the plotter mechanism.</p>
+<div class="tags"><span>CNC plotter</span><span>IoT</span><span>Machine learning</span><span>Inventor</span><span>Ansys</span><span>Arduino IDE</span></div>
+<button class="tog" aria-expanded="false">Show details</button>
+<div class="more">
+<ul><li>Targeted watering at X, Y coordinates instead of overhead irrigation, to cut water waste (up to 50% savings in tests).</li>
+<li>Moisture-triggered irrigation, plus Random Forest and regression models to adjust water volume.</li></ul>
+<div class="gal">
+<button data-s="images/greensense-cad.jpg" data-c="CNC plotter frame, CAD"><img src="images/greensense-cad.jpg" alt="CAD model of the CNC plotter frame"></button>
+<button data-s="images/greensense-prototype.jpg" data-c="Prototype"><img src="images/greensense-prototype.jpg" alt="GreenSense prototype"></button>
+<button data-s="images/greensense-frame.jpg" data-c="Plotter frame detail"><img src="images/greensense-frame.jpg" alt="Plotter frame detail"></button>
+</div></div>
+</div></div>
+
+<div class="proj"><div>
+<h3>Low-visibility driving system (ultrasonic sensing)</h3>
+<p class="meta">Department student creativity competition, 3rd place, group project, 2022</p>
+<p>A concept for helping drivers in heavy fog: ultrasonic echoes converted into electrical signals and light-intensity data, shown on the vehicle head unit. I worked on the CAD models of the transceiver system, pulser and bumper mounting.</p>
+<div class="tags"><span>Autodesk Inventor</span><span>Ultrasonic sensing</span><span>CAD</span></div>
+<button class="tog" aria-expanded="false">Show details</button>
+<div class="more"><div class="gal">
+<button data-s="images/lvs-bumper.jpg" data-c="Bumper mounting concept"><img src="images/lvs-bumper.jpg" alt="Car bumper with the sensor module"></button>
+<button data-s="images/lvs-module.jpg" data-c="Transceiver module, CAD"><img src="images/lvs-module.jpg" alt="Transceiver module CAD"></button>
+<button data-s="images/lvs-concept.jpg" data-c="Signal conversion concept"><img src="images/lvs-concept.jpg" alt="Signal conversion concept"></button>
+<button data-s="images/cad-drawing.jpg" data-c="Technical drawing"><img src="images/cad-drawing.jpg" alt="Technical drawing sheet"></button>
+</div></div>
+</div></div>
+</div></section>
+
+<section id="leadership"><div class="wrap">
+<h2>Leadership</h2>
+<div class="cols">
+<div class="card"><h3>BEM Teknik Universitas Brawijaya</h3>
+<p class="meta">Executive Board Member (Collective Presidency, 1 of 10), Head of External Affairs Dept. | 2025/2026</p>
+<ul><li>Co-led strategy in a collective system with no single president, across 8 engineering departments.</li>
+<li>Supervised 28 staff running 6 department programs.</li>
+<li>Secured 3 corporate MoUs, launched an alumni podcast series, and tracked 1,300+ alumni through a tracer study.</li>
+<li>Led benchmarking exchanges with other organizations (TEKSAS, SAFARI).</li></ul></div>
+<div class="card"><h3>Kemah Kerja Mahasiswa XLV</h3>
+<p class="meta">Chief Executive | November 2024 to February 2025</p>
+<ul><li>Directed 390+ committee members through a Secretary General, a Treasurer and 7 operational divisions.</li>
+<li>Led 1,180+ engineering students in 7 village infrastructure projects at once (drainage, paving, street lighting and more).</li>
+<li>Managed budget, site logistics, safety and stakeholders to finish all projects on schedule.</li></ul></div>
+</div>
+<p style="margin-top:18px">Earlier roles: staff of External Affairs at BEM Teknik UB and at HMM FT-UB, and committee member for Kemah Kerja XLIV (street lighting installation), Pelatihan Kader Teknik, KRIDA, Kongres Mahasiswa Teknik, M-Games and Probinmaba.</p>
+</div></section>
+
+<section id="skills"><div class="wrap skills">
+<h2>Skills</h2>
+<div class="cols">
+<dl><dt>Design and modeling</dt><dd>Autodesk Inventor (working knowledge), AutoCAD (basic), SolidWorks (basic), Ansys</dd></dl>
+<dl><dt>Analysis</dt><dd>Minitab (DOE, RSM), ImageJ, Microsoft Excel</dd></dl>
+<dl><dt>Methods</dt><dd>Root cause analysis (Fishbone, Why-Why), PDCA, tensile testing, metallography</dd></dl>
+<dl><dt>Welding</dt><dd>Basic industrial welding, WPS identification, visual inspection</dd></dl>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact</h2>
+<p>I am open to maintenance, manufacturing and engineering roles. The quickest way to reach me is email.</p>
+<div class="btns"><a class="btn p" href="mailto:aulsantosa@gmail.com">aulsantosa@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/auliasantosa">linkedin.com/in/auliasantosa</a></div>
+</div></section>
+<footer><div class="wrap">Muhammad Aulia Rahman Santosa, Bogor, Indonesia</div></footer>
+
+<dialog id="lb"><form method="dialog"><button>Close</button></form><img alt=""><p></p></dialog>
+<script>
+document.querySelectorAll('.tog').forEach(function(b){b.addEventListener('click',function(){var p=b.closest('.proj'),o=p.classList.toggle('open');b.textContent=o?'Hide details':'Show details';b.setAttribute('aria-expanded',o)})});
+var lb=document.getElementById('lb');
+document.querySelectorAll('.gal button').forEach(function(b){b.addEventListener('click',function(){lb.querySelector('img').src=b.dataset.s;lb.querySelector('img').alt=b.dataset.c;lb.querySelector('p').textContent=b.dataset.c;lb.showModal()})});
+lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+</script>
+</body>
+</html>
